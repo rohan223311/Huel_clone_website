@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huel/about_us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./image/huel_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!---------------------------------------- navbar start -------------------------------------->
+    <nav class="navbar navbar-expand-lg  bg-body-secondary sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navi ms-5 ms-lg-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/logo.png" alt="huel-logo" width="70" height="60">
+                </a>
+            </div>
+            <div class="basket_icon d-lg-none mt-2 me-sm-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <p class="fs-6"><i class="fa-solid fa-cart-shopping me-2" style="margin-top: 10px;"></i>Cart</p>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ms-4">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#products" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu w-50 mx-auto bg-dark">
+                            <li><a class="dropdown-item" href="#products"><i
+                                        class="fa-sharp fa-solid fa-box me-2"></i>Meals</a>
+                            </li>
+                            <li><a class="dropdown-item ms-2" href="#access"><i
+                                        class="fa-brands fa-shopify me-2"></i>Accessories</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#clothing"><i
+                                        class="fa-solid fa-shirt me-2"></i>Clothings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#promotion" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Promotions
+                        </a>
+                        <ul class="dropdown-menu  text-center mx-auto bg-dark">
+                            <li><a class="dropdown-item" href="#promotion">Free shipping over $65</a></li>
+                            <li><a class="dropdown-item" href="#promotion">Refer a friend & Save $15</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#promotion">Subscribe & Save 20% OFF</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user-plus fs-5 login-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu w-25 mx-auto bg-dark">
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-arrow-right-from-bracket me-3"></i>Login</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-clock me-3"></i>Sign Up</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-chevron-left me-3"></i>Log
+                                    Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <form class="d-flex justify-content-lg-between mt-2 me-5" role="search">
+                    <div class="input-div d-flex mx-auto">
+                        <input class="form-control me-2 pt-1 border border-dark border-2" type="search"
+                            placeholder="Search. . ." aria-label="Search" style="height: 40px;">
+                        <button class="btn btn-outline-success ms-1 me-lg-2" type="submit"
+                            style="height: 40px;">Search</button>
+                    </div>
+
+                    <div class="basket_icon b-icon d-none d-lg-block ms-5 me-0">
+                        <a href="#" class="text-decoration-none">
+                            <p><i class="fa-solid fa-cart-shopping cart-icon" style="margin-top: 10px;"></i></p>
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------------- navbar end -------------------------------------->
+
+    <!---------------------------------------- content start -------------------------------------->
+    <section>
+        <div class="container-fluid">
+            <div class="content mt-3 mx-auto py-3 py-sm-4">
+                <h3 class="f-h3">About Huel</h3>
+                <p class="f-p">Huel ( <strong>H</strong>uman + F<strong>uel</strong>) is nutritionally complete food.
+                    This means every Huel meal contains a balance of
+                    all 27 essential vitamins and minerals, protein, essential fats, carbs, fiber and phytonutrients in
+                    a single product.</p>
+                <p class="s-p mt-4">It was started by <a href="#" class="text-decoration-none"> Julian Hearn</a> in June
+                    2015
+                    with a mission.</p>
+                <p class=" t-p py-3 px-2 px-md-4 bg-secondary-subtle">Huel is made from plant-based sustainable
+                    ingredients like
+                    oats, peas, rice, flaxseed, coconut, and
+                    sunflower, and it is available in a range of products:</p>
+                <ul>
+                    <li>High protein meal shakes such as <a href="#" class="text-decoration-none"> Huel Black
+                            Edition</a></li>
+                    <li>Hot delicious <a href="#" class="text-decoration-none"> Instant Meals</a></li>
+                    <li>Comprehensive supplements such as <a href="#" class="text-decoration-none"> Daily Greens</a>
+                    </li>
+                    <li>Snacks such as the <a href="#" class="text-decoration-none"> Complete Nutrition Bars</a></li>
+                    <li>And <a href="#" class="text-decoration-none"> many more!</a></li>
+                </ul>
+
+                <img src="./image/huel_home_bgg.png" alt="daily superblend" class="img-2">
+
+                <h2 class="f-h2">Why we created Huel and why we believe it's the future of food</h2>
+                <p class="f-p">In an ideal world, we'd all have time to select, buy, prep, and cook our meals with whole
+                    foods, and
+                    have the knowledge to ensure we're getting the complete nutrition we need. But we know this is not
+                    always possible. When people are on the go or in a rush, they often resort to quick, unhealthy "junk
+                    food"—think snacking on a bag of chips or a chocolate bar or grabbing a sandwich or a cheeseburger
+                    for lunch. Sadly, all this food is optimized for taste over nutrition, which is the essential value
+                    of food.</p>
+                <p class="f-p">The mass food industry uses cheap tricks to make junk food addicting. It’s calorie-rich
+                    from empty
+                    carbs and processed oils and then filled with excess sugar and salt for flavor. This food is
+                    designed to be craveable, and the result is that we over consume it. Now, over 64% of adults are
+                    overweight or obese, and many suffer from obesity-related diseases, like diabetes and heart disease.
+                </p>
+                <p class="f-p">
+                    With the global population predicted to reach 9.7 billion by 2050, our current food production
+                    methods are often outdated and unsustainable, not to mention unethical.
+                </p>
+                <p class="f-p">
+                    We throw away 30% of the food we produce, we use meat and animal products as our main source of
+                    protein, and we create too much packaging waste.
+                </p>
+                <h4 class="mt-4">Being passionate about high product quality</h4>
+                <p>A team of experienced Nutritionists and Product Development Specialists develop all Huel products and
+                    are produced using the best ingredients in facilities that meet the strictest quality standards.</p>
+                <p>All our facilities and equipment are held to the highest safety standards and regulations so you can
+                    be sure you’ll be consuming top-quality nutrition.</p>
+                <h4 class="mt-4">Being affordable</h4>
+                <p>Huel starts at only $1.52 per 400kcal meal.</p>
+                <h3 class="mt-5">Our Culture. Don’t be a dick.</h3>
+                <p>We believe a strong and positive culture is vital for success. So we codified our rules of the game
+                    in the first few months after we launched Huel, then printed and framed them. When we moved into our
+                    new office, we went one step further and covered the entire wall with our values.</p>
+                <img src="./image/d-be-dick.png" alt="our culture photo" class="img-1">
+                <h2 class="mt-4">Meet the Founder</h2>
+                <p>Hello, my name is Julian and I’m the Founder and CMO (Chief Marketing Officer) of Huel.</p>
+                <img src="./image/founder.jpg" alt="founder photo" class="img-2">
+                <p class="mt-3">Find out more about me on <a href="#" class="text-decoration-none"> my bio page.</a></p>
+                <p>I started Huel because I wanted to create something I was proud of.</p>
+                <p>I wanted to create a business that did the right thing for the planet, for its staff, and most
+                    importantly, for its customers. I wanted to create a brand that people would be proud to be
+                    associated with.</p>
+                <h3>Julian’s favorites</h3>
+                <ul class="fonder-ul">
+                    <li>Vanilla Huel Powder—2 scoops, half a spoon of instant coffee, ice, and cold water
+                        Chocolate RTD</li>
+                    <li>Chocolate Caramel bar—yum</li>
+                    <li>Black Huel T-shirt (medium)—perfect fit, love it</li>
+                </ul>
+                <h2 class="mt-5">Meet the team and become a Hueligan</h2>
+                <p>We’re a tight-knit team of intelligent, hard-working and bloody lovely people who are passionate
+                    about making the world a happier, healthier, and better place.</p>
+                <p>We are a team of over 100 people working in 4 offices across the US, UK, and Europe, and are always
+                    looking for additional exceptional talent.</p>
+                <iframe src="https://www.youtube.com/embed/Eb5WWZf_A3Q?si=IZL0NkZ_YeMFubVM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- content end -------------------------------------->
+
+    <!---------------------------------------- join-vip-start ----------------------------------->
+    <section>
+        <div class="container-fluid">
+            <div class="row bg-dark text-white mt-5 py-5 ps-lg-5 vip-row">
+                <div class="col-12 col-md-6 vip-text-col">
+                    <h3><i class="fa-solid fa-envelope-circle-check me-3"></i>Join our VIP list</h3>
+                    <p class="mt-3">Never miss out on new products, exclusive offers, and more when you join the Huel
+                        mailing list.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control py-3 ps-2 ps-sm-4" placeholder="Enter your email address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-none btn-success" type="button" id="button-addon2">Sign
+                            Up</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------------------------- join-vip-end ----------------------------------->
+
+    <!---------------------------------------- h-global-start ----------------------------------->
+    <section>
+        <div class="container-fluid py-5">
+            <ul class="list-unstyled d-flex flex-wrap  gap-3 gap-lg-5 justify-content-center h-glo-ul">
+                <li><a href="" class="text-decoration-none text-dark h-glo-text">Huel Global</a></li>
+                <li><a href="#" class="text-decoration-none">Denmark</a></li>
+                <li><a href="#" class="text-decoration-none">Czech Republic</a></li>
+                <li><a href="#" class="text-decoration-none">Europe</a></li>
+                <li><a href="#" class="text-decoration-none">Germany</a></li>
+                <li><a href="#" class="text-decoration-none">Japan</a></li>
+                <li><a href="#" class="text-decoration-none">United Kingdom</a></li>
+                <li><a href="#" class="text-decoration-none">Sweden</a></li>
+                <li><a href="#" class="text-decoration-none">Poland</a></li>
+            </ul>
+        </div>
+    </section>
+    <!---------------------------------------- h-global-end ----------------------------------->
+
+    <!---------------------------------------- footer-start ----------------------------------->
+    <footer class="bg-secondary-subtle py-4">
+        <img src="./image/logo.png" alt="huel-logo" width="110" height="90" class="mb-3 ms-3 d-block d-md-none">
+        <!-- --------------accordion-----start-------- -->
+        <div class="accordion px-3 d-md-none" id="accordionExample">
+            <div class="accordion-item rounded-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button text-dark rounded-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Our Products
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column gap-4">
+                        <a href="#" class="text-decoration-none">Daily Greens</a>
+                        <a href="#" class="text-decoration-none">Daily Superblend</a>
+                        <a href="#" class="text-decoration-none">Complete Protein</a>
+                        <a href="#" class="text-decoration-none">Instant Meals</a>
+                        <a href="#" class="text-decoration-none">Powder</a>
+                        <a href="#" class="text-decoration-none">Accessories</a>
+                        <a href="#" class="text-decoration-none">Fashion wears</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        About Us
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column gap-4">
+                        <a href="#" class="text-decoration-none">About Huel</a>
+                        <a href="#" class="text-decoration-none">Press</a>
+                        <a href="#" class="text-decoration-none">Account</a>
+                        <a href="#" class="text-decoration-none">Collab with us</a>
+                        <a href="#" class="text-decoration-none">Student discount</a>
+                        <a href="#" class="text-decoration-none">Careers</a>
+                        <a href="#" class="text-decoration-none">Huel Discount Codes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Help
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column gap-4">
+                        <a href="#" class="text-decoration-none">FAQ and Help Center</a>
+                        <a href="#" class="text-decoration-none">Contact us</a>
+                        <a href="#" class="text-decoration-none">Shipping</a>
+                        <a href="#" class="text-decoration-none">Terms</a>
+                        <a href="#" class="text-decoration-none">Privacy</a>
+                        <a href="#" class="text-decoration-none">Returns</a>
+                        <a href="#" class="text-decoration-none">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------accordion-----end-------- -->
+
+        <div class="mid-scr d-none d-md-block">
+            <div class="f-list-section d-flex justify-content-evenly gap-5 align-items-center mb-5">
+                <div class="list-div d-flex flex-column gap-3">
+                    <img src="./image/logo.png" alt="huel-logo" width="115" height="90" class="ms-1">
+                    <h4>Our Products</h4>
+                    <a href="#" class="text-decoration-none">Daily Greens</a>
+                    <a href="#" class="text-decoration-none">Daily Superblend</a>
+                    <a href="#" class="text-decoration-none">Complete Protein</a>
+                    <a href="#" class="text-decoration-none">Instant Meals</a>
+                    <a href="#" class="text-decoration-none">Powder</a>
+                    <a href="#" class="text-decoration-none">Accessories</a>
+                    <a href="#" class="text-decoration-none">Fashion wears</a>
+                </div>
+                <div class="list-div d-flex flex-column gap-3 a-h-div">
+                    <h4>About Us</h4>
+                    <a href="#" class="text-decoration-none">About Huel</a>
+                    <a href="#" class="text-decoration-none">Press</a>
+                    <a href="#" class="text-decoration-none">Account</a>
+                    <a href="#" class="text-decoration-none">Collab with us</a>
+                    <a href="#" class="text-decoration-none">Student discount</a>
+                    <a href="#" class="text-decoration-none">Careers</a>
+                    <a href="#" class="text-decoration-none">Huel Discount Codes</a>
+                </div>
+                <div class="list-div d-flex flex-column gap-3 a-h-div">
+                    <h4>Help</h4>
+                    <a href="#" class="text-decoration-none">FAQ and Help Center</a>
+                    <a href="#" class="text-decoration-none">Contact us</a>
+                    <a href="#" class="text-decoration-none">Shipping</a>
+                    <a href="#" class="text-decoration-none">Terms</a>
+                    <a href="#" class="text-decoration-none">Privacy</a>
+                    <a href="#" class="text-decoration-none">Returns</a>
+                    <a href="#" class="text-decoration-none">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="social d-md-flex justify-content-evenly align-items-center mt-5 mt-md-3">
+            <div class="s-div text-center">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="text-center">© 2015 - 2024 Huel Inc. / Designed by Rohan</p>
+        </div>
+
+    </footer>
+    <!---------------------------------------- footer-end ----------------------------------->
+
+    <!---------------------------------------- scrollUp-start ----------------------------------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-chevron-up"></i></button>
+    <!---------------------------------------- scrollUp-end ----------------------------------->
+
+    <!---------------------------------------- preloader-start ----------------------------------->
+    <div id="preloader"></div>
+    <!---------------------------------------- preloader-end ----------------------------------->
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

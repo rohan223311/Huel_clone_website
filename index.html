@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huel.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./image/huel_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!---------------------------------------- navbar start -------------------------------------->
+    <nav class="navbar navbar-expand-lg  bg-body-secondary sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navi ms-5 ms-lg-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/logo.png" alt="huel-logo" width="70" height="60">
+                </a>
+            </div>
+            <div class="basket_icon d-lg-none mt-2 me-sm-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <p class="fs-6"><i class="fa-solid fa-cart-shopping me-2" style="margin-top: 10px;"></i>Cart</p>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ms-5">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#products" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu w-50 mx-auto bg-dark">
+                            <li><a class="dropdown-item" href="#products"><i
+                                        class="fa-sharp fa-solid fa-box me-2"></i>Meals</a>
+                            </li>
+                            <li><a class="dropdown-item ms-2" href="#access"><i
+                                        class="fa-brands fa-shopify me-2"></i>Accessories</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#clothing"><i
+                                        class="fa-solid fa-shirt me-2"></i>Clothings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#promotion" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Promotions
+                        </a>
+                        <ul class="dropdown-menu  text-center mx-auto bg-dark">
+                            <li><a class="dropdown-item" href="#promotion">Free shipping over $65</a></li>
+                            <li><a class="dropdown-item" href="#promotion">Refer a friend & Save $15</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#promotion">Subscribe & Save 20% OFF</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user-plus fs-5 login-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu w-25 mx-auto bg-dark">
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-arrow-right-from-bracket me-3"></i>Login</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-clock me-3"></i>Sign Up</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-chevron-left me-3"></i>Log
+                                    Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <form class="d-flex flex-lg-row ms-2 justify-content-lg-end align-items-center" role="search">
+                    <div class="input-div d-flex mx-auto">
+                        <input class="form-control me-2 pt-1 border border-dark border-2" type="search"
+                            placeholder="Search. . ." aria-label="Search" style="height: 40px;">
+                        <button class="btn btn-outline-success ms-1 me-lg-2" type="submit"
+                            style="height: 40px;">Search</button>
+                    </div>
+
+                    <div class="basket_icon b-icon d-none d-lg-block ms-3 ms-lg-1 mt-lg-2 me-0">
+                        <a href="#" class="text-decoration-none">
+                            <p><i class="fa-solid fa-cart-shopping cart-icon" style="margin-top: 10px;"></i></p>
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------------- navbar end -------------------------------------->
+
+
+    <!------------------------------ home-page start ---------------------------------->
+    <header id="home">
+        <div class="container-fluid">
+            <div class="row  bg-secondary-subtle bg-gradient align-items-center p-3">
+
+                <div class="head-text order-2 order-lg-1 col-12 col-lg-6 text-center">
+                    <h1 class="mt-3 mt-lg-0"><i class="fa-brands fa-hire-a-helper"></i>uel daily superblend</h1>
+                    <p class="w-75 mx-auto my-4 lead">NEW! Fuel every adventure with 87+
+                        wholefood-sourced ingredients,
+                        antioxidants, and 25g
+                        plant-based protein </p>
+                    <a href="#" class="a1 text-decoration-none d-block my-3 text-white w-50 mx-auto py-3">Shop All Huel
+                        Products<i class="fa-solid fa-angles-right"></i></a>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.youtube.com/watch?v=CKsURPQWnTE"
+                            class="a2 fs-1 text-decoration-none me-2"><i class="fa-regular fa-circle-play"></i></a>
+                        <span class="fw-bolder">Watch</span>
+                    </div>
+                </div>
+                <div class="head-img order-1 order-lg-2 col-12 col-lg-6 text-center">
+                    <img src="./image/home_main.png" alt="huel_produts_image" class="img img-fluid">
+                    <img src="./image/huel_home_bgg.png" alt="" class="img img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!---------------------------------------- home-page end -------------------------------------->
+
+
+
+    <!---------------------------------------- home-page-2 start -------------------------------------->
+    <div class="d-flex flex-column flex-lg-row mt-3 flex-wrap">
+        <div class="mc hp-2">
+            <div class="mc-photo text-center">
+                <img src="./image/meal_cup_main.jpg" alt="meal-cup" class="img img-fluid rounded-2 mt-2">
+                <div class="explore">
+                    <p class="text-center">Explore more<i class="fa-solid fa-angles-right"></i></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="be hp-2">
+            <div class="be-photo">
+                <img src="./image/black-e-poweder.jpg" alt="black-protein-powder" class="img img-fluid rounded-2 mt-2">
+                <div class="be-text">
+                    <h1 class="bg-dark text-white p-1">Black Edition</h1>
+                    <p>Super high-protein</p>
+                    <p>Super-convenient</p>
+                    <p>meals</p>
+                    <button class="btn">Shop Black Edition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------- home-page-2 end -------------------------------------->
+
+    <hr>
+
+    <!----------------------------------------meal-- start ------------------------------>
+    <section id="products">
+        <div class="container-fluid">
+            <div class="row p-row">
+                <div class="col-12">
+                    <h3 class="huel-t ms-4">Check Out Huel Products Range</h3>
+                </div>
+            </div>
+            <!-- meal-product--list -->
+            <div class="row mt-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card mt-3 mx-auto cart-b">
+                        <img src="./image/huel_daily_green.png" class="card-img-top" alt="huel daily green">
+                        <div class="text-center">
+                            <h5>Daily Greens</h5>
+                            <p>150 health benefits</p>
+                            <p class="meal-price">$44.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card mt-3 mxa cart-b">
+                        <img src="./image/best_seller_powdder.png" class="card-img-top" alt="huel best seller Powder">
+                        <div class="text-center">
+                            <h5>Powder</h5>
+                            <p>Best seller</p>
+                            <p class="meal-price">$36.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 snack-col">
+                    <div class="card mt-3 mx-auto cart-b snack-card">
+                        <img src="./image/snack_bar.png" class="card-img-top" alt="Huel snack bar">
+                        <div class="text-center">
+                            <h5>Complete Nutrition Bar</h5>
+                            <p>High protein snack</p>
+                            <p class="meal-price">$2.71</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card mt-3 mxa cart-b">
+                        <img src="./image/instant_meal.png" class="card-img-top" alt="instant_meal">
+                        <div class="text-center">
+                            <h5>Instant Meals</h5>
+                            <p>Warm & Tasty</p>
+                            <p class="meal-price">$24.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card mt-3 mx-auto cart-b">
+                        <img src="./image/ready_to_drink.png" class="card-img-top" alt="ready_to_drink">
+                        <div class="text-center">
+                            <h5>Ready-to-drink</h5>
+                            <p>On-the-go essential</p>
+                            <p class="meal-price">$4.42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card mt-3 mxa cart-b">
+                        <img src="./image/bestseller_bundles.png" class="card-img-top" alt="bestseller_bundles">
+                        <div class="text-center">
+                            <h5>Bestseller Bundle</h5>
+                            <p>Make it easy</p>
+                            <p class="meal-price">$149.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------meal-- end ------------------------------>
+
+    <hr>
+    <!---------------------------------------- accessories start ----------------------------------->
+    <section id="access">
+        <div class="container-fluid">
+            <div class="acc-t text-center col-12">
+                <h3>Accessories</h3>
+                <p>Shakers, pots & more</p>
+            </div>
+            <!-- Accessories-product-list -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3 mt-0 mb-5">
+                <div class="col acc-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/huel_new_shaker.png" class="card-img-top" alt="New Huel Shaker">
+                        <div class="card-body re-card-body">
+                            <h5 class="card-title">New Huel Shaker</h5>
+                            <p class="card-text">$12.99</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col acc-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/huel_shaker_clear.png" class="card-img-top" alt="Huel Shaker Bottle (Clear)">
+                        <div class="card-body">
+                            <h5 class="card-title">Huel Shaker Bottle (Clear)</h5>
+                            <p class="card-text">$2.49 (50% OFF)</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col acc-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/meal_pot.png" class="card-img-top" alt="Reusable Huel Instant Meal Pot">
+                        <div class="card-body">
+                            <h5 class="card-title">Reusable Huel Instant Meal Pot</h5>
+                            <p class="card-text">$4.99</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col acc-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/tote_bag.png" class="card-img-top" alt="Huel Tote Bag">
+                        <div class="card-body">
+                            <h5 class="card-title">Huel Tote Bag</h5>
+                            <p class="card-text">$7.99</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col acc-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/scoop.png" class="card-img-top" alt="Scoop">
+                        <div class="card-body">
+                            <h5 class="card-title">Scoop</h5>
+                            <p class="card-text">$0.49</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <!---------------------------------------- accessories end ----------------------------------->
+
+
+    <!---------------------------------------- clothing start ----------------------------------->
+    <section id="clothing">
+        <h4 class="cloth-t text-center my-5 px-4 px-sm-5">Complete your look with our sustainable products</h4>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3 mt-0 mb-5">
+                <div class="col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/note.png" alt="Fallback Image" class="note-img rounded-2">
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <video src="./image/man_cap_vd.mp4" type="video/mp4" class="card-img-top men-vd" autoplay muted
+                            playsinline></video>
+                        <img src="./image/men_cap.jpg" alt="Fallback Image" class="men-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Men's Cap</h5>
+                            <p class="card-text">$35.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <!-- <video src="./image/women_beanie_vd.mp4" type="video/mp4" class="card-img-top men-vd" autoplay
+                            muted playsinline></video> -->
+                        <img src="./image/women_beanie_main.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Women's Beanie</h5>
+                            <p class="card-text">$35.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <!-- <video src="./image/men-performance-t-shirt.mp4" type="video/mp4" class="card-img-top men-vd"
+                            autoplay muted playsinline></video> -->
+                        <img src="./image/men-performance-shirt.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Men's Performance T-shirt</h5>
+                            <p class="card-text">$45.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <video src="./image/women_sport_bra.mp4" type="video/mp4" class="card-img-top men-vd" autoplay
+                            muted playsinline></video>
+                        <img src="./image/woman_sport_bra.jpg" alt="Fallback Image" class="men-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Women's Sport Bra</h5>
+                            <p class="card-text">$60.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <!-- <video src="./image/men-hoodie.mp4" type="video/mp4" class="card-img-top men-vd"
+                            autoplay muted playsinline></video> -->
+                        <img src="./image/men-hoodie-1.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Men's Zip-Through Hoodie</h5>
+                            <p class="card-text">$99.99</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <video src="./image/wo_hoodie.mp4" type="video/mp4" class="card-img-top men-vd" autoplay muted
+                            playsinline></video>
+                        <img src="./image/wo_hoodie-1.jpg" alt="Fallback Image" class="men-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Women's Pullover Hoodie</h5>
+                            <p class="card-text">$89.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <!-- <video src="./image/woman_t-shirt.mp4" type="video/mp4" class="card-img-top men-vd"
+                            autoplay muted playsinline></video> -->
+                        <img src="./image/wo_t-shirt.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Women's T-shirt</h5>
+                            <p class="card-text">$35.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <!-- <video src="./image/wo_skiny_jean.mp4" type="video/mp4" class="card-img-top men-vd"
+                            autoplay muted playsinline></video> -->
+                        <img src="./image/wo_jean.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Women's Skiny-Fit Jeans</h5>
+                            <p class="card-text">$105.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card vc-card">
+                        <!-- <video src="./image/men-jogger.mp4" type="video/mp4" class="card-img-top men-vd"
+                            autoplay muted playsinline></video> -->
+                        <img src="./image/men-jogger-1.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Men's Joggers</h5>
+                            <p class="card-text">$79.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/k-beanie.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Kid's Beanie</h5>
+                            <p class="card-text">$35.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cloth-col">
+                    <div class="card mx-auto acc-card">
+                        <img src="./image/kid-cloth-3.jpg" alt="Fallback Image" class="kid-img">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Kid's Hoodie / Joggers</h5>
+                            <p class="card-text">$49.00 / $39.00</p>
+                            <hr>
+                            <a href="#" class="btn btn-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- clothing end ----------------------------------->
+
+
+    <!---------------------------------------- promotion-start ----------------------------------->
+    <section id="promotion">
+        <div class="container-fluid">
+            <div class="row bg-dark text-white py-5 justify-content-center my-5">
+                <div class="col12 col-md-6 col-lg-4 p-text-col my-2 py-3 ps-3 ps-sm-5">
+                    <h4><i class="fa-brands fa-shopify me-3"></i>Subscribe & Save 20%</h4>
+                    <p>Save time and money! Edit, pause, or cancel at any time.</p>
+                </div>
+                <div class="col12 col-md-6 col-lg-4 p-text-col my-2 py-3 ps-3 ps-sm-5">
+                    <h4><i class="fa-regular fa-thumbs-up me-3"></i>Refer a Friend & Save $15</h4>
+                    <p>Introduce your friends to Huel and score a credit. Win-Win.</p>
+                </div>
+                <div class="col12 col-md-6 col-lg-4 p-text-col my-2 py-3 ps-3 ps-sm-5">
+                    <h4><i class="fa-regular fa-calendar-days me-3"></i>Free Shipping on Orders $65+</h4>
+                    <p>It keeps getting better-FREE shipping on orders over $65.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- promotion end ----------------------------------->
+
+    <!---------------------------------------- review-start ----------------------------------->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col12 re-col">
+                    <h1>Over 300 million meals sold to more than 100 countries</h1>
+                    <p class="text-secondary">There are over 3 million Hueligans out there! Here’s what a few of them
+                        had to say</p>
+                    <a href="#" class=" text-decoration-none">See more reviews<i
+                            class="fa-solid fa-angles-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-around">
+                <div class="col12 col-md-6 col-lg-4 re-col-card">
+                    <div class="card mx-auto re-card">
+                        <div class="card-header">
+                            Huel
+                        </div>
+                        <div class="card-body re-card-body">
+                            <h5 class="card-title">Paul Robbins</h5>
+                            <p class="card-text">“I love that it tastes nice, it is cruelty free, vegan and healthy. I
+                                save a fortune on vitamins buying Huel.”
+                            </p>
+                            <p class="text-success">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col12 col-md-6 col-lg-4 re-col-card">
+                    <div class="card mx-auto re-card">
+                        <div class="card-header">
+                            Huel
+                        </div>
+                        <div class="card-body re-card-body">
+                            <h5 class="card-title">Charlotte S.</h5>
+                            <p class="card-text">“I’ve dropped 2 sizes and I look and feel so healthy.Huel is great!”
+                            </p>
+                            <p class="text-success">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col12 col-md-6 col-lg-4 re-col-card">
+                    <div class="card mx-auto re-card">
+                        <div class="card-header">
+                            Huel
+                        </div>
+                        <div class="card-body re-card-body">
+                            <h5 class="card-title">Smith Rowe</h5>
+                            <p class="card-text">“Huel changed my busy and unhealthy life around.save money on food and
+                                regulate calories”
+                            </p>
+                            <p class="text-success">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------------------------- review-end ----------------------------------->
+
+    <!---------------------------------------- join-vip-start ----------------------------------->
+    <section>
+        <div class="container-fluid">
+            <div class="row bg-dark text-white mt-5 py-5 ps-lg-5 vip-row">
+                <div class="col-12 col-md-6 vip-text-col">
+                    <h3><i class="fa-solid fa-envelope-circle-check me-3"></i>Join our VIP list</h3>
+                    <p class="mt-3">Never miss out on new products, exclusive offers, and more when you join the Huel
+                        mailing list.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control py-3 ps-2 ps-sm-4" placeholder="Enter your email address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-none btn-success" type="button" id="button-addon2">Sign
+                            Up</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------------------------- join-vip-end ----------------------------------->
+
+    <!---------------------------------------- h-global-start ----------------------------------->
+    <section>
+        <div class="container-fluid py-5">
+            <ul class="list-unstyled d-flex flex-wrap  gap-3 gap-lg-5 justify-content-center h-glo-ul">
+                <li><a href="" class="text-decoration-none text-dark h-glo-text">Huel Global</a></li>
+                <li><a href="#" class="text-decoration-none">Denmark</a></li>
+                <li><a href="#" class="text-decoration-none">Czech Republic</a></li>
+                <li><a href="#" class="text-decoration-none">Europe</a></li>
+                <li><a href="#" class="text-decoration-none">Germany</a></li>
+                <li><a href="#" class="text-decoration-none">Japan</a></li>
+                <li><a href="#" class="text-decoration-none">United Kingdom</a></li>
+                <li><a href="#" class="text-decoration-none">Sweden</a></li>
+                <li><a href="#" class="text-decoration-none">Poland</a></li>
+            </ul>
+        </div>
+    </section>
+    <!---------------------------------------- h-global-end ----------------------------------->
+
+    <!---------------------------------------- footer-start ----------------------------------->
+    <footer class="bg-secondary-subtle py-4">
+        <img src="./image/logo.png" alt="huel-logo" width="110" height="90" class="mb-3 ms-3 d-block d-md-none">
+        <!-- --------------accordion-----start-------- -->
+        <div class="accordion px-3 d-md-none" id="accordionExample">
+            <div class="accordion-item rounded-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button text-dark rounded-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Our Products
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column gap-4">
+                        <a href="#" class="text-decoration-none">Daily Greens</a>
+                        <a href="#" class="text-decoration-none">Daily Superblend</a>
+                        <a href="#" class="text-decoration-none">Complete Protein</a>
+                        <a href="#" class="text-decoration-none">Instant Meals</a>
+                        <a href="#" class="text-decoration-none">Powder</a>
+                        <a href="#" class="text-decoration-none">Accessories</a>
+                        <a href="#" class="text-decoration-none">Fashion wears</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        About Us
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column gap-4">
+                        <a href="#" class="text-decoration-none">About Huel</a>
+                        <a href="#" class="text-decoration-none">Press</a>
+                        <a href="#" class="text-decoration-none">Account</a>
+                        <a href="#" class="text-decoration-none">Collab with us</a>
+                        <a href="#" class="text-decoration-none">Student discount</a>
+                        <a href="#" class="text-decoration-none">Careers</a>
+                        <a href="#" class="text-decoration-none">Huel Discount Codes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Help
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column gap-4">
+                        <a href="#" class="text-decoration-none">FAQ and Help Center</a>
+                        <a href="#" class="text-decoration-none">Contact us</a>
+                        <a href="#" class="text-decoration-none">Shipping</a>
+                        <a href="#" class="text-decoration-none">Terms</a>
+                        <a href="#" class="text-decoration-none">Privacy</a>
+                        <a href="#" class="text-decoration-none">Returns</a>
+                        <a href="#" class="text-decoration-none">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------accordion-----end-------- -->
+
+        <div class="mid-scr d-none d-md-block">
+            <div class="f-list-section d-flex justify-content-evenly gap-5 align-items-center mb-5">
+                <div class="list-div d-flex flex-column gap-3">
+                    <img src="./image/logo.png" alt="huel-logo" width="115" height="90" class="ms-1">
+                    <h4>Our Products</h4>
+                    <a href="#" class="text-decoration-none">Daily Greens</a>
+                    <a href="#" class="text-decoration-none">Daily Superblend</a>
+                    <a href="#" class="text-decoration-none">Complete Protein</a>
+                    <a href="#" class="text-decoration-none">Instant Meals</a>
+                    <a href="#" class="text-decoration-none">Powder</a>
+                    <a href="#" class="text-decoration-none">Accessories</a>
+                    <a href="#" class="text-decoration-none">Fashion wears</a>
+                </div>
+                <div class="list-div d-flex flex-column gap-3 a-h-div">
+                    <h4>About Us</h4>
+                    <a href="#" class="text-decoration-none">About Huel</a>
+                    <a href="#" class="text-decoration-none">Press</a>
+                    <a href="#" class="text-decoration-none">Account</a>
+                    <a href="#" class="text-decoration-none">Collab with us</a>
+                    <a href="#" class="text-decoration-none">Student discount</a>
+                    <a href="#" class="text-decoration-none">Careers</a>
+                    <a href="#" class="text-decoration-none">Huel Discount Codes</a>
+                </div>
+                <div class="list-div d-flex flex-column gap-3 a-h-div">
+                    <h4>Help</h4>
+                    <a href="#" class="text-decoration-none">FAQ and Help Center</a>
+                    <a href="#" class="text-decoration-none">Contact us</a>
+                    <a href="#" class="text-decoration-none">Shipping</a>
+                    <a href="#" class="text-decoration-none">Terms</a>
+                    <a href="#" class="text-decoration-none">Privacy</a>
+                    <a href="#" class="text-decoration-none">Returns</a>
+                    <a href="#" class="text-decoration-none">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="social d-md-flex justify-content-evenly align-items-center mt-5 mt-md-3">
+            <div class="s-div text-center">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="text-center">© 2015 - 2024 Huel Inc. / Designed by Rohan</p>
+        </div>
+
+    </footer>
+    <!---------------------------------------- footer-end ----------------------------------->
+
+    <!---------------------------------------- scrollUp-start ----------------------------------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-chevron-up"></i></button>
+    <!---------------------------------------- scrollUp-end ----------------------------------->
+
+    <!---------------------------------------- preloader-start ----------------------------------->
+    <div id="preloader"></div>
+    <!---------------------------------------- preloader-end ----------------------------------->
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
